@@ -1,0 +1,6 @@
+framework module Pods_CellRegistration_Example {
+  umbrella header "Pods-CellRegistration_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
