@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CellRegistration
 
 class StandardTableViewCell : UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {

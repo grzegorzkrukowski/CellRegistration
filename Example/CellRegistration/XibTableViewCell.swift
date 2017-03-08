@@ -13,5 +13,3 @@ import CellRegistration
 class XibTableViewCell : UITableViewCell {
     
 }
-
-extension XibTableViewCell: ViewFromXib { }

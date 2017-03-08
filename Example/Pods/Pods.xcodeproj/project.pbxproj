@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0784504A74F7847EA656690EBFD1C81E /* Pods-CellRegistration_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4895E4066FCE8ED360037FB53FF0517A /* Pods-CellRegistration_Example-dummy.m */; };
-		2A516B55CDD9EC4020C8E88309182C04 /* ViewFromXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1BA6B83EF418EA0EADA212171B4AF1 /* ViewFromXib.swift */; };
 		40BDB394068386E2AF8AD40246C1B7B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		526C95EF714A72EE08E6616EF1CEA63D /* CellRegistration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 322A128A79C8EF96B1B23C85C611CA16 /* CellRegistration-dummy.m */; };
 		530CA22FD5142CB0500DB952FE88B50A /* UITableView+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A14D4E8440D84AAF46F72F915C2BF7 /* UITableView+register.swift */; };
 		7C06A55E3569059D51CD639D0BB4C081 /* Pods-CellRegistration_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BBF1B3E968694B53987B38CB5DE1071 /* Pods-CellRegistration_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCB74D8728DDA016C4402BBF9D5783FF /* UICollectionView+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71595356FC749FCC707D096DDCA4EBA9 /* UICollectionView+register.swift */; };
-		ECA778DC921799D9DDA72D58321F8142 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B02D20B214A6FEB2B8168B6C56AAF7 /* ReusableView.swift */; };
+		ECA778DC921799D9DDA72D58321F8142 /* CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B02D20B214A6FEB2B8168B6C56AAF7 /* CellRegistration.swift */; };
 		F80F5650821DA5D44576881CBD52570F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		FF36C372DAAFE6CF27B57C68F2760789 /* CellRegistration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA944809DA0431C2ACC50A2F4DCCB06 /* CellRegistration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -31,24 +30,23 @@
 
 /* Begin PBXFileReference section */
 		06EA50419341A98995C599E5DE30AE0C /* Pods-CellRegistration_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CellRegistration_Example.release.xcconfig"; sourceTree = "<group>"; };
-		16AF5D8412EEBC2994805FDCD72DD94E /* CellRegistration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CellRegistration.modulemap; sourceTree = "<group>"; };
-		21D1AC021D90F2763DDA496067AA49CB /* CellRegistration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CellRegistration.framework; path = CellRegistration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16AF5D8412EEBC2994805FDCD72DD94E /* CellRegistration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CellRegistration.modulemap; sourceTree = "<group>"; };
+		21D1AC021D90F2763DDA496067AA49CB /* CellRegistration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CellRegistration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D43AF9FA1193E482A0FEA9015DC422 /* Pods-CellRegistration_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CellRegistration_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		26B02D20B214A6FEB2B8168B6C56AAF7 /* ReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		26B02D20B214A6FEB2B8168B6C56AAF7 /* CellRegistration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CellRegistration.swift; sourceTree = "<group>"; };
 		322A128A79C8EF96B1B23C85C611CA16 /* CellRegistration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CellRegistration-dummy.m"; sourceTree = "<group>"; };
-		331670515F4B6E05891A351D34CF6E5E /* Pods_CellRegistration_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CellRegistration_Example.framework; path = "Pods-CellRegistration_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		331670515F4B6E05891A351D34CF6E5E /* Pods_CellRegistration_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CellRegistration_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A5572DAE369DDB09E6CCA043C578C3 /* CellRegistration-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CellRegistration-prefix.pch"; sourceTree = "<group>"; };
 		4895E4066FCE8ED360037FB53FF0517A /* Pods-CellRegistration_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CellRegistration_Example-dummy.m"; sourceTree = "<group>"; };
 		6BBF1B3E968694B53987B38CB5DE1071 /* Pods-CellRegistration_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CellRegistration_Example-umbrella.h"; sourceTree = "<group>"; };
 		71595356FC749FCC707D096DDCA4EBA9 /* UICollectionView+register.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionView+register.swift"; sourceTree = "<group>"; };
 		8092BEA9BD05FA61AFA6DCEC7E3DDD14 /* Pods-CellRegistration_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CellRegistration_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8673D05F11FC576D987B234285ABFC5B /* Pods-CellRegistration_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CellRegistration_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8673D05F11FC576D987B234285ABFC5B /* Pods-CellRegistration_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CellRegistration_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EB3EBDC3A46E6BC732B4DF8BE02F13D /* Pods-CellRegistration_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CellRegistration_Example-resources.sh"; sourceTree = "<group>"; };
 		A8A14D4E8440D84AAF46F72F915C2BF7 /* UITableView+register.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+register.swift"; sourceTree = "<group>"; };
 		AC9AEC0175E7BCB30057DAD8EA2A0377 /* Pods-CellRegistration_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CellRegistration_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		ADA944809DA0431C2ACC50A2F4DCCB06 /* CellRegistration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CellRegistration-umbrella.h"; sourceTree = "<group>"; };
-		BC1BA6B83EF418EA0EADA212171B4AF1 /* ViewFromXib.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFromXib.swift; sourceTree = "<group>"; };
 		C7BB87C538384153B1AB9254637D57FB /* Pods-CellRegistration_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CellRegistration_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D66B34971F90AFC75CD27F7398E35F96 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,12 +87,10 @@
 		4F9A6743DF992DEB95A1895B78DFC359 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				26B02D20B214A6FEB2B8168B6C56AAF7 /* ReusableView.swift */,
+				26B02D20B214A6FEB2B8168B6C56AAF7 /* CellRegistration.swift */,
 				71595356FC749FCC707D096DDCA4EBA9 /* UICollectionView+register.swift */,
 				A8A14D4E8440D84AAF46F72F915C2BF7 /* UITableView+register.swift */,
-				BC1BA6B83EF418EA0EADA212171B4AF1 /* ViewFromXib.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -152,7 +148,6 @@
 			children = (
 				4F9A6743DF992DEB95A1895B78DFC359 /* Classes */,
 			);
-			name = CellRegistration;
 			path = CellRegistration;
 			sourceTree = "<group>";
 		};
@@ -281,10 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				526C95EF714A72EE08E6616EF1CEA63D /* CellRegistration-dummy.m in Sources */,
-				ECA778DC921799D9DDA72D58321F8142 /* ReusableView.swift in Sources */,
+				ECA778DC921799D9DDA72D58321F8142 /* CellRegistration.swift in Sources */,
 				DCB74D8728DDA016C4402BBF9D5783FF /* UICollectionView+register.swift in Sources */,
 				530CA22FD5142CB0500DB952FE88B50A /* UITableView+register.swift in Sources */,
-				2A516B55CDD9EC4020C8E88309182C04 /* ViewFromXib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
