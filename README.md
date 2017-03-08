@@ -6,7 +6,7 @@
 
 ## General
 
-UITableView and UICollectionView extensions that allows to auto-register cells and extends both with simplified interfaces for dequeuing. It uses swift generics to detect the desired type of cell. It supports cells created via code and also ones created from Xib files.
+UITableView and UICollectionView extensions that allows to auto-register cells and extends both with simplified interfaces for dequeuing. It uses swift generics to detect the desired type of cell. It supports cells created via code and also ones created from Xib files. It allows you to forget about registering cells and completely skipping reuse identifier management.
 
 ## Example
 
@@ -43,7 +43,17 @@ let : XibTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Details
+
+This pod adds ReusableView protocol to ```UITableViewCell``` and ```UICollectionViewCell```, which add ```reuseIdentifier``` to those classes by making String out of class name.
+This identifier is used to auto-register classes using standard UIKit registering methods.
+By using swift generics it allows to detect if cell should be registered as a class or nib file.
+
+```ReusableView``` -> register by class
+
+```ViewFromXib``` -> register by nib file
+
+By using associated objects it checks if cell needs to be registered or just dequed.
 
 ## Installation
 
