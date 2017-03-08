@@ -6,13 +6,33 @@
 
 ## General
 
-UITableView and UICollectionView extensions that allows to auto-register cells and extends both with simplified interfaces for dequeuing.
-It supports cells created via code and also ones created from Xib files.
+UITableView and UICollectionView extensions that allows to auto-register cells and extends both with simplified interfaces for dequeuing. It uses swift generics to detect the desired type of cell. It supports cells created via code and also ones created from Xib files.
 
 ## Example
 
+For standard cells that inherits from UITableViewCell:
+
 ```Swift
 tableView.dequeueReusableCell(forIndexPath: indexPath) as StandardCell
+```
+
+or
+
+```Swift
+let : StandardCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+```
+
+For cells that are loaded from xib files:
+
+```Swift
+class XibTableViewCell : UITableViewCell {
+    
+}
+
+//custom cells loaded from xibs have to extend ViewFromXib, to allow automatic xib registration
+extension XibTableViewCell: ViewFromXib { }
+
+tableView.dequeueReusableCell(forIndexPath: indexPath) as XibTableViewCell
 ```
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
