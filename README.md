@@ -35,6 +35,12 @@ extension XibTableViewCell: ViewFromXib { }
 tableView.dequeueReusableCell(forIndexPath: indexPath) as XibTableViewCell
 ```
 
+or
+
+```Swift
+let : XibTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+```
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
