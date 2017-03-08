@@ -1,6 +1,5 @@
 # CellRegistration
 
-[![CI Status](http://img.shields.io/travis/grzegorzkrukowski/CellRegistration.svg?style=flat)](https://travis-ci.org/grzegorzkrukowski/CellRegistration)
 [![Version](https://img.shields.io/cocoapods/v/CellRegistration.svg?style=flat)](http://cocoapods.org/pods/CellRegistration)
 [![License](https://img.shields.io/cocoapods/l/CellRegistration.svg?style=flat)](http://cocoapods.org/pods/CellRegistration)
 [![Platform](https://img.shields.io/cocoapods/p/CellRegistration.svg?style=flat)](http://cocoapods.org/pods/CellRegistration)

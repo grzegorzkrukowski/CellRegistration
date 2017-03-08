@@ -1,19 +1,19 @@
 {
   "name": "CellRegistration",
-  "version": "0.1.0",
-  "summary": "A short description of CellRegistration.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.0",
+  "summary": "UITableView and UICollectionView extensions that allows to auto-register cells and extends both with simplified interfaces for dequeuing",
+  "description": "UITableView and UICollectionView extensions that allows to auto-register cells and extends both with simplified interfaces for dequeuing.",
   "homepage": "https://github.com/grzegorzkrukowski/CellRegistration",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "grzegorzkrukowski": "grkrukowski@gmail.com"
+    "Grzegorz Krukowski": "grkrukowski@gmail.com"
   },
   "source": {
     "git": "https://github.com/grzegorzkrukowski/CellRegistration.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
