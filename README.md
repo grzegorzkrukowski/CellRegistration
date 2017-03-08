@@ -6,7 +6,7 @@
 
 ## One line to rule them all
 
-One-liner replacement for registering, dequeing, casting cells for UITableView and UICollectionView
+One-liner replacement for registering, dequeuing, casting cells for UITableView and UICollectionView
 
 Instead of:
 
