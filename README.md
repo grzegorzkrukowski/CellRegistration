@@ -4,56 +4,48 @@
 [![License](https://img.shields.io/cocoapods/l/CellRegistration.svg?style=flat)](http://cocoapods.org/pods/CellRegistration)
 [![Platform](https://img.shields.io/cocoapods/p/CellRegistration.svg?style=flat)](http://cocoapods.org/pods/CellRegistration)
 
-## General
+## One line to rule them all
 
-UITableView and UICollectionView extensions that allows to auto-register cells and extends both with simplified interfaces for dequeuing. It uses swift generics to detect the desired type of cell. It supports cells created via code and also ones created from Xib files. It allows you to forget about registering cells and completely skipping reuse identifier management.
+One-liner replacement for registering, dequeing, casting cells for UITableView and UICollectionView
+
+Instead of:
+
+```Swift
+tableView.register(MyCustomCell.self, forCellReuseIdentifier: "MyCustomCell")
+let cell : MyCustomCell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
+```
+
+you can now do only:
+
+```Swift
+let : MyCustomCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+```
+
+No code refacotring needed, you can use that with existing projects that uses old-way.
+No need to worry about any registering, reuse identifiers, casting any more.
+
+## Cells loaded from nib files
+
+Regardless the type of cell (loaded from code, or loaded from nib file), code is always the same:
+
+**Only requirement is to make a xib file with the same name as a class name.**
+
+```Swift
+let : MyCustomCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+let : MyCustomCellLoadedFromXib = tableView.dequeueReusableCell(forIndexPath: indexPath)
+```
+
+or
+
+```Swift
+tableView.dequeueReusableCell(forIndexPath: indexPath) as MyCustomCell
+tableView.dequeueReusableCell(forIndexPath: indexPath) as MyCustomCellLoadedFromXib
+``` 
+This pod will search for a xib file that matches class name and register this nib automatically, otherwise it registers cell by class name.
 
 ## Example
 
-For standard cells that inherits from UITableViewCell:
-
-```Swift
-tableView.dequeueReusableCell(forIndexPath: indexPath) as StandardCell
-```
-
-or
-
-```Swift
-let : StandardCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
-```
-
-For cells that are loaded from xib files:
-
-```Swift
-class XibTableViewCell : UITableViewCell {
-    
-}
-
-//custom cells loaded from xibs have to extend ViewFromXib, to allow automatic xib registration
-extension XibTableViewCell: ViewFromXib { }
-
-tableView.dequeueReusableCell(forIndexPath: indexPath) as XibTableViewCell
-```
-
-or
-
-```Swift
-let : XibTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
-```
-
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Details
-
-This pod adds ReusableView protocol to ```UITableViewCell``` and ```UICollectionViewCell```, which add ```reuseIdentifier``` to those classes by making String out of class name.
-This identifier is used to auto-register classes using standard UIKit registering methods.
-By using swift generics it allows to detect if cell should be registered as a class or nib file.
-
-```ReusableView``` -> register by class (by default UITableViewCell, UICollectionViewCell)
-
-```ViewFromXib``` -> register by nib file
-
-By using associated objects it checks if cell needs to be registered or just dequed.
 
 ## Installation
 
