@@ -49,7 +49,7 @@ This pod adds ReusableView protocol to ```UITableViewCell``` and ```UICollection
 This identifier is used to auto-register classes using standard UIKit registering methods.
 By using swift generics it allows to detect if cell should be registered as a class or nib file.
 
-```ReusableView``` -> register by class
+```ReusableView``` -> register by class (by default UITableViewCell, UICollectionViewCell)
 
 ```ViewFromXib``` -> register by nib file
 
