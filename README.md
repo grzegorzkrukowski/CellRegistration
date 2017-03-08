@@ -22,7 +22,7 @@ pod "CellRegistration"
 
 ## Author
 
-grzegorzkrukowski, grkrukowski@gmail.com
+Grzegorz Krukowski, grkrukowski@gmail.com
 
 ## License
 
