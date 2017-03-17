@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CellRegistration'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'UITableView and UICollectionView extensions that allows to auto-register cells and extends both with simplified interfaces for dequeuing'
 
 # This description is used to generate tags and improve search results.
