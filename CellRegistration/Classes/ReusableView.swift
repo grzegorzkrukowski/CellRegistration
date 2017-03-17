@@ -8,16 +8,16 @@
 
 import Foundation
 
-public protocol CellRegistration: class {
+public protocol ReusableView: class {
     static var reuseIdentifier: String { get }
 }
 
-extension CellRegistration where Self: UIView {
+extension ReusableView where Self: UIView {
     public static var reuseIdentifier: String {
         return String(describing: self)
     }
 }
 
-extension UICollectionViewCell: CellRegistration { }
+extension UICollectionViewCell: ReusableView { }
 
-extension UITableViewCell: CellRegistration { }
+extension UITableViewCell: ReusableView { }

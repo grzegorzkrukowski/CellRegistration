@@ -26,7 +26,7 @@ extension UICollectionView {
         }
     }
 
-    public func register<T: UITableViewCell>(_: T.Type) where T: CellRegistration {
+    public func register<T: UITableViewCell>(_: T.Type) where T: ReusableView {
         let bundle = Bundle(for: T.self)
 
         if bundle.path(forResource: T.reuseIdentifier, ofType: "nib") != nil {
@@ -37,7 +37,7 @@ extension UICollectionView {
         }
     }
 
-    public func dequeueReusableCell<T: UITableViewCell>(forIndexPath indexPath: IndexPath) -> T where T: CellRegistration {
+    public func dequeueReusableCell<T: UITableViewCell>(forIndexPath indexPath: IndexPath) -> T where T: ReusableView {
         if self.registeredCells.contains(T.reuseIdentifier) == false {
             self.registeredCells.insert(T.reuseIdentifier)
             self.register(T.self)
